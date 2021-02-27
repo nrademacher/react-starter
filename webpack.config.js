@@ -7,6 +7,20 @@ module.exports = {
   entry: {
     index: "./src/index.js",
   },
+  module: {
+    rules: [
+      {
+        test: /\.m?js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: [["@babel/preset-env", { targets: "defaults" }]],
+          },
+        },
+      },
+    ],
+  },
   devtool: "inline-source-map",
   devServer: {
     contentBase: "./dist",
