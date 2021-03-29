@@ -1,6 +1,6 @@
 {
   "name": "webpack-boilerplate",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Boilerplate for webpack-based app",
   "main": "index.js",
   "repository": "https://github.com/cxxiii/webpack-boilerplate",
@@ -8,26 +8,33 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "yarn build:tailwind && webpack serve --open",
-    "watch": "webpack --watch",
-    "build": "webpack",
-    "build:tailwind": "postcss src/tailwind.css -o src/style.css"
+    "start": "yarn build:tailwind && webpack serve --mode development --open",
+    "build": "yarn build:tailwind && webpack --mode production",
+    "build:tailwind": "postcss tailwind.css -o src/style.css",
+    "setup:react": "yarn add react react-dom && yarn add -D @babel/preset-react && echo '{ \"presets\": [\"@babel/preset-env\", \"@babel/preset-react\"] }' > .babelrc",
+    "lint": "eslint ."
   },
   "devDependencies": {
     "@babel/core": "^7.13.8",
     "@babel/preset-env": "^7.13.8",
-    "autoprefixer": "^10.2.5",
+    "@babel/preset-react": "^7.13.13",
     "babel-loader": "^8.2.2",
     "clean-webpack-plugin": "^3.0.0",
-    "eslint": "^7.20.0",
+    "eslint": "^7.23.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
     "html-loader": "^2.1.2",
     "html-webpack-plugin": "^5.2.0",
     "postcss": "^8.2.8",
     "postcss-cli": "^8.3.1",
-    "tailwindcss": "^2.0.4",
     "webpack": "^5.23.0",
     "webpack-cli": "^4.5.0",
     "webpack-dev-server": "^3.11.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "autoprefixer": "^10.2.5",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "tailwindcss": "^2.0.4"
+  }
 }
