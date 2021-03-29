@@ -1,4 +1,4 @@
-import { globalStyles } from "./components/globalStyles";
+// import { globalStyles } from "./components/globalStyles";
 import HelloWorld from "./components/HelloWorld";
 import app, { helloWorld } from "./app";
 
