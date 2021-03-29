@@ -5,17 +5,13 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 module.exports = {
   mode: "development",
   entry: {
-    index: "./src/index.html",
+    index: "./src/index.js",
   },
   module: {
     rules: [
       {
         test: /\.html$/i,
         loader: "html-loader",
-      },
-      {
-        test: /\.css$/,
-        type: "asset/resource",
       },
       {
         test: /\.m?js$/,
