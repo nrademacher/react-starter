@@ -4,4 +4,4 @@ import app, { helloWorld } from "./app";
 
 helloWorld();
 
-document.body.append(HelloWorld());
+// document.body.append(HelloWorld());

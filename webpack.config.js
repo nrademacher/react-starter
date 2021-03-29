@@ -10,6 +10,14 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.html$/i,
+        loader: "html-loader",
+      },
+      {
+        test: /\.css$/,
+        type: "asset/resource",
+      },
+      {
         test: /\.m?js$/,
         exclude: /node_modules/,
         use: {
