@@ -1,5 +1,5 @@
 node_modules/
-
+test
 # Don't accidentally commit Tailwind's raw output file
 # Do commit if Tailwind is ejected
 style.css
