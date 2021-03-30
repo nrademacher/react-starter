@@ -13,7 +13,7 @@ DX features, such as hot reloading and optimized production builds.
 
 1. Run `yarn start` to start the development server (`localhost:8080`).
 2. Start coding by editing the starter files in the `src` folder.
-3. When done, run `yarn build` to create an optimized production build.
+3. When done, run `yarn build` to create a production build.
 
 ### TODO
 
