@@ -1,2 +1,24 @@
-node_modules
+node_modules/
+
+dist/
+
+# Don't accidentally commit Tailwind's raw output file
+src/style.css
+
+.env
+.env.test
+
+yarn-debug.log*
+yarn-error.log*
+.yarn-integrity
+
+.eslintcache
+
 .DS_Store
+
+
+
+
+
+
+
