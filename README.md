@@ -1,6 +1,6 @@
 ## Webdev Starter 🚀 (WIP)
 
-This is a simple, light-weight boilerplate for getting started quickly with a web dev project.
+This is a simple, light-weight boilerplate for getting started quickly with a new web development project.
 
 The idea is to enable you to dive right in on a project idea without having to spend any time/energy on setup and config, yet with all the essential
 DX features, such as hot reloading and optimized production builds.
