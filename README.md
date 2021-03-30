@@ -13,7 +13,7 @@ You're also not locked into any JavaScript framework (or using the language at a
 
 #### Basic
 
-1. Run `yarn start` to start the development server (`localhost:8080`).
+1. Run `yarn` to install dependencies, then `yarn start` to start the development server (`localhost:8080`).
 2. Start coding by editing the starter files in the `src` folder.
 3. When done, run `yarn build` to create a production build.
 
@@ -22,3 +22,4 @@ You're also not locked into any JavaScript framework (or using the language at a
 - [ ] Flesh out this README
 - [ ] More and better scripts
 - [ ] Create branch for `npm` users
+- [ ] Add useful links/resources section
