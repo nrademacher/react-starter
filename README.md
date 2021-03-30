@@ -10,5 +10,5 @@ This is a simple, light-weight boilerplate for getting started quickly with a we
 
 ### TODO
 
-[] - Complete README
-[] - More and better scripts
+- [ ] Complete README
+- [ ] More and better scripts
