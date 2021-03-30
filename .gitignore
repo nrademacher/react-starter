@@ -1,7 +1,7 @@
 node_modules/
 
 # Don't accidentally commit Tailwind's raw output file
-src/style.css # Do commit if Tailwind is ejected
+/src/style.css # Do commit if Tailwind is ejected
 
 dist/
 
