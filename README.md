@@ -1,16 +1,22 @@
-## Webdev Starter (WIP)
+## Webdev Starter 🚀 (WIP)
 
 This is a simple, light-weight boilerplate for getting started quickly with a web dev project.
 
-Disclaimer: This is an early version and mostly catering to my own purposes for now.
+The idea is to enable you to dive right in on a project idea without having to spend any time/energy on setup and config, yet with all the essential
+DX features, such as hot reloading and optimized production builds.
 
-### Basics
+**Disclaimer**: This is an early version and mostly catering to my own purposes for now.
 
-1. Run `yarn start` to start the development server (`localhost:8080`)
-2. Start coding
-3. When done, run `yarn build` to create a production build 
+### Getting Started
+
+#### Basic
+
+1. Run `yarn start` to start the development server (`localhost:8080`).
+2. Start coding by editing the starter files in the `src` folder.
+3. When done, run `yarn build` to create an optimized production build.
 
 ### TODO
 
-- [ ] Complete README
+- [ ] Flesh out this README
 - [ ] More and better scripts
+- [ ] Create branch for `npm` users

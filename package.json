@@ -11,7 +11,7 @@
     "start": "yarn build:tailwind && webpack serve --open --config webpack.dev.js",
     "build": "export NODE_ENV=production && yarn build:tailwind && yarn minify:css && webpack --config webpack.prod.js",
     "build:tailwind": "if test -f \"tailwind.source.css\"; then postcss tailwind.source.css -o src/style.css; fi",
-    "clean": "yarn clean:build",
+    "clean": "yarn clean:build && yarn clean:css",
     "clean:build": "if test -d 'dist/'; then rm -r dist/; fi",
     "clean:css": "echo '' > src/style.css",
     "minify:css": "./node_modules/.bin/cleancss -o src/style.css src/style.css",
