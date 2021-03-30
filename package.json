@@ -9,9 +9,9 @@
   "private": true,
   "scripts": {
     "start": "yarn build:tailwind && webpack serve --mode development --open",
-    "build": "yarn build:tailwind && webpack --mode production",
+    "build": "export NODE_ENV=production && yarn build:tailwind && webpack --mode production",
     "build:tailwind": "postcss tailwind.css -o src/style.css",
-    "setup:react": "yarn add react react-dom && yarn add -D @babel/preset-react && echo '{ \"presets\": [\"@babel/preset-env\", \"@babel/preset-react\"] }' > .babelrc",
+    "setup:react": "yarn add react react-dom && yarn add -D @babel/preset-react && echo '{ \"presets\": [\"@babel/preset-react\"] }' > .babelrc",
     "lint": "eslint ."
   },
   "devDependencies": {
@@ -29,7 +29,8 @@
     "postcss-cli": "^8.3.1",
     "webpack": "^5.23.0",
     "webpack-cli": "^4.5.0",
-    "webpack-dev-server": "^3.11.2"
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.7.3"
   },
   "dependencies": {
     "autoprefixer": "^10.2.5",

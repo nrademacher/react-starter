@@ -27,10 +27,6 @@ module.exports = {
   resolve: {
     extensions: ["*", ".js", ".jsx"],
   },
-  devtool: "inline-source-map",
-  devServer: {
-    contentBase: "./dist",
-  },
   plugins: [
     new CleanWebpackPlugin({ cleanStaleWebpackAssets: true }),
     new HtmlWebpackPlugin({
