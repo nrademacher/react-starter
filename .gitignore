@@ -1,9 +1,9 @@
 node_modules/
 
-dist/
-
 # Don't accidentally commit Tailwind's raw output file
-src/style.css
+src/style.css # Do commit if Tailwind is ejected
+
+dist/
 
 .env
 .env.test
