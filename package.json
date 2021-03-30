@@ -8,11 +8,12 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "yarn build:tailwind && webpack serve --mode development --open",
-    "build": "export NODE_ENV=production && yarn build:tailwind && webpack --mode production",
+    "start": "yarn build:tailwind && webpack serve --open --config webpack.dev.js",
+    "build": "export NODE_ENV=production && yarn build:tailwind && webpack --config webpack.prod.js",
     "build:tailwind": "postcss tailwind.css -o src/style.css",
     "setup:react": "yarn add react react-dom && yarn add -D @babel/preset-react && echo '{ \"presets\": [\"@babel/preset-react\"] }' > .babelrc",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "eject:react": "yarn remove react react-dom @babel/preset/react && rm .babelrc"
   },
   "devDependencies": {
     "@babel/core": "^7.13.8",
