@@ -5,7 +5,7 @@ This is a simple, light-weight boilerplate for getting started quickly with a ne
 The idea is to be able to dive right in on a project idea without having to spend any time/energy on setup and config, yet with all the essential
 DX features, such as hot reloading and optimized production builds.
 
-You're also not locked into any JavaScript framework (or using the language at all), but with commands like `yarn setup:react` you can easily set one up.
+You're also not locked into any JavaScript framework (or using the language at all), but you can easily extend the boilerplate with commands like `yarn setup:react`.
 
 **Disclaimer**: This is an early version and mostly catering to my own learning purposes for now.
 
