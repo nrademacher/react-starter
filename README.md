@@ -1,6 +1,8 @@
-## Webdev Starter
+## Webdev Starter (WIP)
 
 This is a simple, light-weight boilerplate for getting started quickly with a web dev project.
+
+Disclaimer: This is an early version and mostly catering to my own purposes for now.
 
 ### Basics
 
