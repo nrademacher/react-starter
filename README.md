@@ -2,10 +2,12 @@
 
 This is a simple, light-weight boilerplate for getting started quickly with a new web development project.
 
-The idea is to enable you to dive right in on a project idea without having to spend any time/energy on setup and config, yet with all the essential
+The idea is to be able to dive right in on a project idea without having to spend any time/energy on setup and config, yet with all the essential
 DX features, such as hot reloading and optimized production builds.
 
-**Disclaimer**: This is an early version and mostly catering to my own purposes for now.
+You're also not locked into any JavaScript framework (or using the language at all), but with commands like `yarn setup:react` you can easily set one up.
+
+**Disclaimer**: This is an early version and mostly catering to my own learning purposes for now.
 
 ### Getting Started
 
