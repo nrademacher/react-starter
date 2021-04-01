@@ -3,7 +3,7 @@ node_modules/
 # Don't accidentally commit Tailwind's raw output file
 .tailwind.styles.css
 
-dist/
+build/
 
 .env
 .env.test
