@@ -14,9 +14,9 @@
     "lint": "if [ -f .eslintrc.* ]; then eslint . --fix; else yarn setup:eslint && eslint . --fix; fi",
     "build:tailwind": "if [ -f tailwind.source.css ]; then postcss tailwind.source.css -o src/style.css; fi",
     "clean:build": "if [ -d dist/ ]; then rm -r dist/; fi",
-    "clean:css": "echo '' > src/style.css",
+    "clean:css": "printf '' > src/style.css",
     "minify:css": "./node_modules/.bin/cleancss -o src/style.css src/style.css",
-    "setup:react": "yarn add react react-dom && yarn add -D @babel/preset-react && if [ ! -f babel.config.json ]; then echo '{ \"presets\": [\"@babel/preset-react\"] }' > babel.config.json; fi",
+    "setup:react": "yarn add react react-dom && yarn add -D @babel/preset-react && if [ ! -f babel.config.json ]; then printf '{ \"presets\": [\"@babel/preset-react\"] }' > babel.config.json; fi && if [ ! -f src/App.js ]; then printf 'import React from \"react\";\n\nconst App = () => <p>Hello, React.</p>;\n\nexport default App;\n\n' > src/App.js; fi && printf 'import React from \"react\";\nimport ReactDOM from \"react-dom\";\nimport App from \"./App\";\n\nReactDOM.render(<App />, document.getElementById(\"root\"));\n'$'\n'\"$(cat src/index.js)\" > src/index.js",
     "setup:eslint": "yarn add -D eslint && eslint --init && if test -f \"package-lock.json\"; then rm package-lock.json && yarn; fi"
   },
   "devDependencies": {
