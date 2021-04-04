@@ -13,26 +13,38 @@ module.exports = {
         loader: "html-loader",
       },
       {
-        test: /\.(js|jsx)$/,
+        test: /\.jsx?$/,
         exclude: /node_modules/,
-        use: {
-          loader: "babel-loader",
-          options: {
-            presets: [["@babel/preset-env", { targets: "defaults" }]],
-            plugins: ["@babel/plugin-transform-runtime"],
-          },
+        loader: "esbuild-loader",
+        options: {
+          loader: "jsx",
+          target: "es2015", // default, or 'es20XX', 'esnext'
         },
+      },
+      {
+        test: /\.tsx?$/,
+        exclude: /node_modules/,
+        loader: "esbuild-loader",
+        options: {
+          loader: "tsx",
+          target: "es2015", // default, or 'es20XX', 'esnext'
+        },
+      },
+      {
+        test: /\.(css|png|svg|jpg|jpeg|gif)$/i,
+        type: "asset/resource",
       },
     ],
   },
   resolve: {
-    extensions: ["*", ".js", ".jsx"],
+    extensions: ["*", ".js", ".jsx", ".ts", ".tsx"],
   },
   plugins: [
-    new CleanWebpackPlugin({ cleanStaleWebpackAssets: true }),
     new HtmlWebpackPlugin({
       template: "src/index.html",
+      filename: "index.html",
     }),
+    new CleanWebpackPlugin({ cleanStaleWebpackAssets: true }),
   ],
   output: {
     filename: "bundle.js",
