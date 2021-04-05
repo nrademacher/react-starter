@@ -21,16 +21,16 @@ You're also not locked into any JavaScript framework (or using the language at a
 
 The main rationale for 'soft-coding' in TailwindCSS is that, if you don't want to spend effort on setup and configurations, you probably don't want to have to create and manage style sheets, either. If you're using this boilerplate, you probably just want to build something that looks good quickly.
 
-Tailwind comes with nice, sane defaults and lets you compose semantic class names so as to allow you to rapidly create aesthetic, responsive UIs. With some knowledge of how CSS works and reading the documentation, it makes for a very smooth, pleasant, and clutter-free way to handle styling.
+Tailwind comes with nice, sane defaults and lets you compose semantic class names so as to allow you to rapidly create aesthetically pleasing, responsive UIs. With some knowledge of CSS and reading the documentation, it makes for a smooth, elegant, and clutter-free way to handle styling.
 
-That said, if you want to write custom CSS, you have several options, including:
+That said, if you want to write custom CSS, your options include:
 
-* Write your custom styles in the `tailwind.source.css` to use alongside Tailwind. That also allows you to create custom Tailwind style components using `@apply`. See the documentation for details. Note that you will need to rebuild the Tailwind style sheet to see your styles by running `yarn build:tailwind`.
-* Link your own style sheets(s) after Tailwind's generated `.tailwind.styles.css`.
+* Writing your custom styles in the `tailwind.source.css` to use with Tailwind. That also allows you to create custom Tailwind style components using `@apply`. See the documentation for details. Note that you will need to rebuild the Tailwind style sheet to see your styles by running `yarn build:tailwind`.
+* Linking your own style sheets(s) alongside Tailwind's `.tailwind.styles.css`.
 * The nuclear option: You can get rid of Tailwind by running `yarn eject:tailwind`. This will:
-   1. Uninstall Tailwind's files and dependencies.
+   1. Remove Tailwind's files and uninstall it and its dependencies.
    2. Create a `styles.css` file in the `src` folder, along with a very minimal CSS reset (`margin` and `padding` to `0`, `box-sizing: border-box`).
-   3. Automatically insert it in `index.html` in place of `.tailwind.styles.css`.
+   3. Automatically link it in `index.html` in place of `.tailwind.styles.css`.
 
 ### TODO
 
