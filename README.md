@@ -19,7 +19,7 @@ You're also not locked into any JavaScript framework (or using the language at a
 
 #### Styling
 
-The main rationale for 'soft-coding' in TailwindCSS is that, if you don't want to spend effort on setup and onfigs, you probably don't want to have to create and manage style sheets, either. If you're using this boilerplate, you probably just want to build something that looks good quickly.
+The main rationale for 'soft-coding' in TailwindCSS is that, if you don't want to spend effort on setup and configurations, you probably don't want to have to create and manage style sheets, either. If you're using this boilerplate, you probably just want to build something that looks good quickly.
 
 Tailwind comes with nice, sane defaults and lets you compose semantic class names so as to allow you to rapidly create aesthetic, responsive UIs. With some knowledge of how CSS works and reading the documentation, it makes for a very smooth, pleasant, and clutter-free way to handle styling.
 
