@@ -28,9 +28,9 @@ That said, if you want to write custom CSS, your options include:
 * Writing your custom styles in the `tailwind.source.css` to use with Tailwind. That also allows you to create custom Tailwind style components using `@apply`. See the documentation for details. Note that you will need to rebuild the Tailwind style sheet to see your styles by running `yarn build:tailwind`.
 * Linking your own style sheets(s) alongside Tailwind's `.tailwind.styles.css`.
 * The nuclear option: You can get rid of Tailwind by running `yarn eject:tailwind`. This will:
-   1. Remove Tailwind's files and uninstall it and its dependencies.
-   2. Create a `styles.css` file in the `src` folder, along with a very minimal CSS reset (`margin` and `padding` to `0`, `box-sizing: border-box`).
-   3. Automatically link it in `index.html` in place of `.tailwind.styles.css`.
+  1. Remove Tailwind's files and uninstall it and its dependencies.
+  2. Create a `styles.css` file in the `src` folder, along with a very minimal CSS reset (`margin` and `padding` to `0`, `box-sizing: border-box`).
+  3. Automatically link it in `index.html` in place of `.tailwind.styles.css`.
 
 ### TODO
 
