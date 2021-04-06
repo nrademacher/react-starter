@@ -1,6 +1,8 @@
 ## Webdev Starter 🚀 (WIP)
 
-This is a light-weight boilerplate for jumpstarting a new web development project, aiming to be continuously optimized for **speed** and **ease-of-use**.
+This is a light-weight boilerplate for jumpstarting a new web development project.
+
+Its aim is to be continuously optimized for **speed** and **ease of use**.
 
 The idea is to be able to dive right in on a project idea without having to spend any time/energy on setup and config, yet with all the essential
 DX features, such as hot reloading, automatic imports, and optimized production builds.
