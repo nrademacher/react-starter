@@ -4,7 +4,7 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
   entry: {
-    index: "./src/index.js",
+    index: "./src/index.jsx",
   },
   module: {
     rules: [
