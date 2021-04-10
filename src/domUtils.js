@@ -1,4 +1,4 @@
-// Element selection helpers
+// Element selection utils
 export const q = (query) => document.querySelector(query);
 
 export const qA = (query) => document.querySelectorAll(query);
@@ -7,7 +7,7 @@ export const id = (elId) => document.getElementById(elId);
 
 export const cn = (className) => document.getElementsByClassName(className);
 
-// Element utility functions
+// Element util functions
 export function hide(el) {
   return (el.hidden = true);
 }
@@ -42,8 +42,7 @@ export const apply = (elements, func, ...funcParams) => {
   }
 };
 
-// Element creation helpers
-
+// Element creation utils
 export const generate = (containerEl, amount, elGenFunc, ...elGenFunParams) => {
   let i = amount;
   while (i > 0) {
