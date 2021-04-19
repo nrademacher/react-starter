@@ -8,7 +8,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "snowpack dev",
+    "dev": "snowpack dev",
     "build": "snowpack build",
     "lint": "if [ -f .eslintrc.* ]; then eslint . --fix; else yarn setup:eslint && eslint . --fix; fi",
     "clean": "if [ -d build/ ]; then rm -r build/; fi",
