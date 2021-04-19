@@ -17,12 +17,12 @@
     "eject:tailwind": "if [ -f tailwind.config.js ]; then yarn remove postcss tailwindcss autoprefixer && rm postcss.config.js tailwind.config.js; fi && printf '*,\n*::before,\n*::after {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0;\n}' > src/index.css"
   },
   "devDependencies": {
-    "@snowpack/plugin-postcss": "^1.2.2",
-    "postcss": "^8.2.8",
-    "snowpack": "^3.2.2"
+    "@snowpack/plugin-postcss": "latest",
+    "postcss": "latest",
+    "snowpack": "latest"
   },
   "dependencies": {
-    "autoprefixer": "^10.2.5",
-    "tailwindcss": "^2.0.4"
+    "autoprefixer": "latest",
+    "tailwindcss": "latest"
   }
 }
