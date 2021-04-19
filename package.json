@@ -1,6 +1,6 @@
 {
   "name": "webdev-starter",
-  "version": "0.0.4",
+  "version": "0.5.0",
   "description": "Boilerplate template for web apps and sites",
   "main": "index.js",
   "repository": "https://github.com/cxxiii/webdev-starter",
