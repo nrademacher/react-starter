@@ -18,14 +18,11 @@
   },
   "devDependencies": {
     "@snowpack/plugin-postcss": "latest",
-    "@snowpack/plugin-react-refresh": "^2.4.2",
     "postcss": "latest",
     "snowpack": "latest"
   },
   "dependencies": {
     "autoprefixer": "latest",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
     "tailwindcss": "latest"
   }
 }
