@@ -1,11 +1,11 @@
 module.exports = {
   mount: {
-    src: '/',
+    src: "/",
   },
-  plugins: [["@snowpack/plugin-react-refresh"],['@snowpack/plugin-postcss']],
+  plugins: [["@snowpack/plugin-postcss"]],
   optimize: {
     bundle: true,
     minify: true,
-    target: 'es2018',
+    target: "es2020",
   },
 };
