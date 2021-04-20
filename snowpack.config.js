@@ -2,7 +2,7 @@ module.exports = {
   mount: {
     src: '/',
   },
-  plugins: [['@snowpack/plugin-postcss']],
+  plugins: [["@snowpack/plugin-react-refresh"],['@snowpack/plugin-postcss']],
   optimize: {
     bundle: true,
     minify: true,
