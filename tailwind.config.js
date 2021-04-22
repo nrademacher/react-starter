@@ -1,5 +1,3 @@
-const plugin = require("tailwindcss/plugin");
-
 module.exports = {
   mode: "jit",
   purge: ["./src/**/*.html", "./src/index.html", "./src/**/*.js"],
