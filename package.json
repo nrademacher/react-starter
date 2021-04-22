@@ -26,5 +26,8 @@
   "dependencies": {
     "autoprefixer": "latest",
     "tailwindcss": "latest"
-  }
+  },
+  "browserslist" : [
+    "last 2 versions"
+  ]
 }
