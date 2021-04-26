@@ -1,11 +1,14 @@
 module.exports = {
   mount: {
-    src: "/",
+    src: '/',
   },
-  plugins: [["@snowpack/plugin-postcss"]],
+  plugins: [
+    ['@snowpack/plugin-postcss'],
+    ['@jadex/snowpack-plugin-tailwindcss-jit'],
+  ],
   optimize: {
     bundle: true,
     minify: true,
-    target: "es2020",
+    target: 'es2020',
   },
 };
