@@ -8,27 +8,24 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "dev": "snowpack dev",
-    "build": "snowpack build",
+    "dev": "vite --open",
+    "build": "vite build",
+    "serve": "vite preview",
     "lint": "if [ -f .eslintrc.* ]; then eslint . --fix; else yarn setup:eslint && eslint . --fix; fi",
-    "clean": "rm -r build/",
+    "clean": "rm -r dist/",
     "setup:eslint": "yarn add -D eslint && eslint --init && if [ -f package-lock.json ]; then rm package-lock.json && yarn; fi && printf 'node_modules/\nbuild/' > .eslintignore",
-    "setup:react": "yarn add react react-dom && yarn add -D @snowpack/plugin-react-refresh && if [ ! -f src/App.jsx ]; then printf 'import React from \"react\";\n\nconst App = () => <p>Hello, React.</p>;\n\nexport default App;\n\n' > src/App.jsx; fi && mv src/index.js src/index.jsx && printf 'import React from \"react\";\nimport ReactDOM from \"react-dom\";\nimport App from \"./App\";\n\nReactDOM.render(<App />, document.getElementById(\"root\"));\n\nif (import.meta.hot) {\n  import.meta.hot.accept();\n}\n'$'\n'\"$(cat src/index.jsx)\" > src/index.jsx && sed -i '' 's/plugins: \\[/plugins: [[\"@snowpack\\/plugin-react-refresh\"],/g' snowpack.config.js",
-    "setup:typescript": "yarn add -D typescript @snowpack/plugin-typescript && sed -i '' 's/plugins: \\[/plugins: [[\"@snowpack\\/plugin-typescript\"],/g' snowpack.config.js && tsc --init",
-    "eject:tailwind": "yarn remove postcss tailwindcss autoprefixer && rm postcss.config.js tailwind.config.js && printf '*,\n*::before,\n*::after {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0;\n}' > src/index.css",
+    "setup:react": "yarn add react react-dom && yarn add -D @vitejs/plugin-react-refresh && printf 'import reactRefresh from \"@vitejs/plugin-react-refresh\";'$'\n'\"$(cat vite.config.js)\" > vite.config.js && if [ ! -f src/App.jsx ]; then printf 'import React from \"react\";\n\nconst App = () => <p>Hello, React.</p>;\n\nexport default App;\n\n' > src/App.jsx; fi && mv src/index.js src/index.jsx && printf 'import React from \"react\";\nimport ReactDOM from \"react-dom\";\nimport App from \"./App\";\n\nReactDOM.render(<App />, document.getElementById(\"root\"));\n'$'\n'\"$(cat src/index.jsx)\" > src/index.jsx && sed -i '' 's/plugins: \\[/plugins: \\[reactRefresh(),/g' vite.config.js",
+    "setup:typescript": "yarn add -D typescript vite-tsconfig-paths && printf 'import tsconfigPaths from \"vite-tsconfig-paths\";'$'\n'\"$(cat vite.config.js)\" > vite.config.js && sed -i '' 's/plugins: \\[/plugins: \\[tsconfigPaths(),/g' vite.config.js && tsc --init",
+    "eject:tailwind": "yarn remove tailwindcss && rm tailwind.config.js",
     "git:rewind": "git reset --hard && git clean -f -d && yarn"
   },
   "devDependencies": {
-    "@jadex/snowpack-plugin-tailwindcss-jit": "^0.2.0",
-    "@snowpack/plugin-postcss": "latest",
     "postcss": "latest",
-    "snowpack": "latest"
+    "vite": "latest"
   },
   "dependencies": {
     "autoprefixer": "latest",
     "tailwindcss": "latest"
   },
-  "browserslist": [
-    "defaults"
-  ]
+  "browserslist": ["defaults"]
 }
