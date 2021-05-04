@@ -1,4 +1,4 @@
-## Webdev Starter 🚀 (WIP)
+## Webdev Starter 🚀
 
 This is a light-weight boilerplate for quickstarting pretty much any new web development project.
 
