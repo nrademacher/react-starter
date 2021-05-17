@@ -6,6 +6,6 @@ Its aim is to be continuously optimized for speed, simplicity, and ease of use.
 
 ### Current setup
 
-* Vite as dev server/bundler, 
-* React as JS library, 
-* TailwindCSS as styling solution
+* [Vite](https://github.com/vitejs/vite) as dev server/bundler, 
+* [React](https://github.com/facebook/react) as JS library, 
+* [Windi CSS](https://github.com/windicss/windicss) as styling solution
