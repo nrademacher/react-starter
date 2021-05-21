@@ -20,13 +20,14 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react-refresh": "latest",
-    "vite-plugin-windicss": "latest",
+    "postcss": "latest",
     "vite": "latest"
   },
   "dependencies": {
+    "autoprefixer": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "windicss": "latest"
+    "tailwindcss": "latest"
   },
   "browserslist": [
     "Edge >= 18, Firefox >= 60, Chrome >= 61, Safari >= 11, Opera >= 48"
