@@ -1,4 +1,4 @@
-## Ract Starter 🚀
+## React Starter 🚀
 
 This is a light-weight boilerplate for quickstarting a new React-based project.
 
