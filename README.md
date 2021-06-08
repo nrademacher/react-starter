@@ -8,4 +8,4 @@ Its aim is to be continuously optimized for speed, simplicity, and ease of use.
 
 * [Vite](https://github.com/vitejs/vite) as dev server/bundler, 
 * [React](https://github.com/facebook/react) as JS library, 
-* [TailwindCSS](https://github.com/tailwindlabs/tailwindcss) as styling solution
+* [TailwindCSS](https://github.com/tailwindlabs/tailwindcss) + [DaisyUI](https://github.com/saadeghi/daisyui) plugin as styling solution
