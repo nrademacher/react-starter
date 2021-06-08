@@ -20,6 +20,7 @@
   },
   "devDependencies": {
     "autoprefixer": "latest",
+    "daisyui": "latest",
     "tailwindcss": "latest",
     "@vitejs/plugin-react-refresh": "latest",
     "postcss": "latest",
